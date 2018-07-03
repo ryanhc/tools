@@ -1,15 +1,14 @@
 #!/bin/sh
 
-# removes .cr2 files that do not have matching .jpeg
+# removes .cr2 files that do not have matching .jpg in the current directory
+# Canon generates .JPG and .CR2 files
 
-base_dir=`pwd`
-jpeg_dir=$base_dir"/"$1
-raw_dir=$base_dir"/"$2
-
-for jpeg_file in `ls $jpeg_dir`; do
-    echo "checking "$jpeg_file
-    jpeg=${jpeg_file%.*}
-    if [ ! -e $raw_dir"/"$jpeg".cr2" ]; then
-        echo "rm $raw_dir'/'$jpeg'.cr2'"
+for cr2_file in `ls *.CR2`; do
+    echo "checking "$cr2_file
+    file=${cr2_file%.*}
+    if [ ! -e ${file}.JPG ]; then
+        echo "rm ${file}.CR2"
+        rm ${file}.CR2
     fi
 done
+
