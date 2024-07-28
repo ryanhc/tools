@@ -1,0 +1,6 @@
+/* https://ghostfam.com/en/change-the-font-in-ghost-editor/ */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+.koenig-lexical .kg-prose :where(p,blockquote,aside,ul,ol):not(:where(.not-kg-prose,[class~="not-kg-prose"] *)) {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
