@@ -1,0 +1,7 @@
+# excludes
+**/@eaDir
+**/Thumbs.db
+**/.vscode-server
+#
+/tank-8t/root/Documents/!0\ 영선자료/*
+/tank-8t/root/Documents/99\ Archived/*

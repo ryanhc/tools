@@ -1,0 +1,7 @@
+- .vscode-server
+- docker/immich/library
+- docker/plex/config
+
+- video
+- tmp
+- work/harp/models

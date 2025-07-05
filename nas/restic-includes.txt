@@ -1,0 +1,10 @@
+# Additional paths
+
+/home/ryanc/.ssh
+/home/ryanc/bin
+#/tank-8t/root/Documents/!0\ 가족 포트폴리오
+#/tank-8t/root/Documents/!0\ 현\ 자료
+#/tank-8t/root/Documents/!0\ 진\ 자료
+#/tank-8t/root/Documents/!0\ 윤\ 자료
+#/tank-8t/root/Documents/은행\ 증권
+/tank-8t/root/Documents/*
