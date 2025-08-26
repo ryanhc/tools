@@ -2,6 +2,9 @@
 # Automatically run by crontab -e
 set -e
 
+pushd /home/ryanc/bin
+crontab -l > crontab-backup.txt
+
 echo "Backup remote servers"
 #ssh ryanc@192.168.1.200 /home/ryanc/docker/bookstack/bookstack-backup-script.sh
 

@@ -1,5 +1,6 @@
 #!/bin/bash
 
-echo sending $1
+MSG="$@"
+echo sending "$MSG"
 TOKEN=`cat gotify_token.txt`
-curl "https://gotify.rhchoi.com/message?token=$TOKEN" -F "title=N100" -F "message=$1" -F "priority=8"
+curl "https://gotify.rhchoi.com/message?token=$TOKEN" -F "title=N100" -F "message=$MSG" -F "priority=8"
