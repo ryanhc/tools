@@ -3,7 +3,7 @@
 set -e
 
 echo "Backup remote servers"
-ssh ryanc@192.168.1.200 /home/ryanc/docker/bookstack/bookstack-backup-script.sh
+#ssh ryanc@192.168.1.200 /home/ryanc/docker/bookstack/bookstack-backup-script.sh
 
 sudo rsync -av --progress --delete --rsync-path="sudo rsync" ubuntu-200: /tank-8t/backup/192.168.1.200/
 sudo rsync -avz --progress --delete --rsync-path="sudo rsync" cello: /tank-8t/backup/cello/

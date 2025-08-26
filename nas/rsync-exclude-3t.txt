@@ -4,4 +4,3 @@
 
 - video
 - tmp
-- work/harp/models
