@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pushd /home/ryanc/bin
+
 MSG="$@"
 echo sending "$MSG"
 TOKEN=`cat gotify_token.txt`

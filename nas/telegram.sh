@@ -3,6 +3,8 @@
 # crontab -e
 # @reboot sleep 10 && /home/ryanc/bin/telegram.sh "System rebooted"
 
+pushd /home/ryanc/bin
+
 TELEGRAM_TOKEN=`cat telegram_token.txt`
 CHAT_ID=`cat telegram_chatid.txt`
 
