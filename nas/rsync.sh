@@ -1,2 +1,2 @@
 #!/bin/sh
-rsync -avR --delete --progress $1 $2
+rsync -avPR --delete $1 $2
