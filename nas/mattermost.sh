@@ -5,8 +5,8 @@ pushd /home/ryanc/bin
 MSG="$@"
 echo sending "$MSG"
 
-BOT_NAME="N100"
-TOKEN=`cat mattermost_token.txt`
+BOT_NAME="ubuntu-server"
+TOKEN=`cat mattermost_token_notification.txt`
 WEBHOOK_URL="https://mm.rhchoi.com/hooks/$TOKEN"
 
 curl -X POST -H "Content-Type: application/json" \
@@ -14,4 +14,3 @@ curl -X POST -H "Content-Type: application/json" \
      $WEBHOOK_URL
 
 exit 0
-
