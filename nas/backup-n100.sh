@@ -28,7 +28,7 @@ sudo zfs snapshot -r tank-8a/root@$(date +%Y%m%d_%H%M%S)_auto_daily
 sudo zfs snapshot -r tank-8a/backup@$(date +%Y%m%d_%H%M%S)_auto_daily
 sudo zfs snapshot -r tank-8b/root@$(date +%Y%m%d_%H%M%S)_auto_daily
 sudo zfs snapshot -r tank-8b/backup@$(date +%Y%m%d_%H%M%S)_auto_daily
-/home/ryanc/bin/gotify.sh "Back up successful: tank-8a and tank-8b"
+#/home/ryanc/bin/gotify.sh "Back up successful: tank-8a and tank-8b"
 /home/ryanc/bin/mattermost.sh "Back up successful: tank-8a and tank-8b"
 fi
 
@@ -37,7 +37,7 @@ sudo /home/ryanc/bin/zfs-prune-snapshots/zfs-prune-snapshots -s '_auto_daily' 2M
 
 #/home/ryanc/bin/backup-to-3t.sh
 
-/home/ryanc/bin/gotify.sh "Back up successful"
+#/home/ryanc/bin/gotify.sh "Back up successful"
 /home/ryanc/bin/mattermost.sh "Back up successful"
 
 exit 0
