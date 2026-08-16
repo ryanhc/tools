@@ -52,7 +52,7 @@ def draw_graph(ticker, df):
     plt.show()
 
 def main():
-    tickers = ["NVDA", "GOOG"]
+    tickers = ["VOO", "SSO", "QQQ", "QLD", "USD","NVDA", "GOOG"]
     df = yf.download(tickers, period="2y", interval="1d")
 
     for ticker in tickers:
