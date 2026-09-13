@@ -48,7 +48,7 @@ def draw_graph(ticker, df):
     plt.legend(loc='upper left')
     
     plt.tight_layout()
-    plt.savefig(f"{ticker}.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"{ticker}.png", dpi=80, bbox_inches="tight")
     plt.show()
 
 def main():

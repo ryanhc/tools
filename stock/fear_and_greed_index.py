@@ -72,7 +72,7 @@ def main():
     plt.grid(True, alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig("fear_and_greed_index.png", dpi=300, bbox_inches="tight")
+    plt.savefig("fear_and_greed_index.png", dpi=80, bbox_inches="tight")
     #print("그래프가 'fear_and_greed_index.png' 파일로 성공적으로 저장되었습니다.")
     plt.show()
 
